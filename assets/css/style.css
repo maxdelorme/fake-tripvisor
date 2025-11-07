@@ -88,7 +88,7 @@ h5 {
   margin-bottom: 6px;
 }
 
-main .container > *::before {
+/* main .container > *::before {
   content: attr(class);
   border: 1px dotted red;
   position: absolute;
@@ -99,7 +99,7 @@ main .container > *::before {
   margin-left: -10px;
   background: #ffffff9c;
   font-size: 12px;
-}
+} */
 /* HEADER */
 
 header {
@@ -472,7 +472,7 @@ footer {
 /* DIALOG*/
 #contact {
   position: fixed;
-  top: 200px;
+
   border-radius: 10px;
   box-shadow: 0 0 15px rgb(255, 255, 255);
   border: 0;
