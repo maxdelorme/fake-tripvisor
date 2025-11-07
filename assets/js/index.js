@@ -24,7 +24,13 @@ document.addEventListener("DOMContentLoaded", () => {
     inputs.forEach((element) => {
       data[element.name] = element.value;
     });
-    const response = await axios.post("http://localhost:3000/form", data);
+
+    const dest_url = location.host.search(/netlify.app/)
+      ? "https://site--fake-tripvisor--5sgz5mzbgxzv.code.run/form"
+      : "http://localhost:3000/form";
+
+    const response = await axios.post(dest_url, data);
+
     console.log(response.data);
   });
 });
