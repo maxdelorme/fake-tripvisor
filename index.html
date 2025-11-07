@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./favicon-tripadvisor.svg" rel="icon" />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <i class="icon-menu_bars max-sm:hidden"></i>
+        <a href="https://www.tripadvisor.fr/" target="_blank"
+          ><img alt="tripadvisor-logo" src="./assets/img/Tripadvisor_logo.svg"
+        /></a>
+        <nav>
+          <div class="hidden"><i class="icon-pencil"></i><span>Avis</span></div>
+          <div class="hidden">
+            <i class="icon-heart"></i><span>Voyage</span>
+          </div>
+          <div class="hidden">
+            <i class="icon-notification_bell"></i><span>Alertes</span>
+          </div>
+          <div class="hidden">
+            <button class="btn-signup" id="btn-signup">Connectez-vous</button>
+          </div>
+          <i class="icon-search max-sm:hidden"></i>
+          <div><i class="icon-empty_cart"></i> <span>Panier</span></div>
+        </nav>
+      </div>
+      <div class="oneline"></div>
+    </header>
+    <main>
+      <div class="container">
+        <h1><span>Explorez </span>Paris</h1>
+        <div class="baseline">
+          Les revenus influencent le choix des expériences présentées sur cette
+          page : en savoir plus.
+        </div>
+        <div class="navigation">
+          <div><span>Hôtels</span><i class="icon-hotels"></i></div>
+          <div>
+            <span>Locations de vacances</span
+            ><i class="icon-vacation_rentals"></i>
+          </div>
+          <div><span>Activités</span><i class="icon-attractions"></i></div>
+          <div><span>Restaurants</span><i class="icon-restaurants"></i></div>
+          <div><span>Forums de voyage</span><i class="icon-forums"></i></div>
+          <div class="ld:hidden">
+            <span>Vols</span><i class="icon-flights"></i>
+          </div>
+          <div class="ld:hidden">
+            <span>Croisières</span><i class="icon-cruises"></i>
+          </div>
+          <div><span>Plus</span><i class="icon-more_horizontal"></i></div>
+        </div>
+        <div class="pictures">
+          <div class="col-1">
+            <img alt="paris" src="./assets/img/view.jpg" />
+            <div><i class="icon-photo"></i><span>Toutes les photos</span></div>
+          </div>
+          <div class="col-2">
+            <img alt="paris" src="./assets/img/caption-8.jpg" /><img
+              alt="paris"
+              src="./assets/img/caption-9.jpg"
+            />
+          </div>
+        </div>
+        <div class="menu">
+          <div>
+            <span>Europe</span>
+            <i class="icon-single_chevron_right"></i>
+            <span>France</span>
+            <i class="icon-single_chevron_right"></i>
+            <span>Île-de-France</span>
+            <i class="icon-single_chevron_right"></i>
+            <div>
+              <span>Paris</span>
+              <i class="icon-caret_down"></i>
+            </div>
+          </div>
+          <div><span>Visiter</span><span>:</span><span>Paris</span></div>
+        </div>
+        <div class="description">
+          <div class="col-1">
+            <h2>La Ville Lumière éblouit en tous points</h2>
+            <p>
+              Aucun autre endroit au monde ne fait autant rêver que Paris. La
+              ville séduit par son art, son architecture, sa culture et sa
+              cuisine, mais il y a aussi des merveilles plus discrètes qui
+              n’attendent qu’à être explorées : les ruelles pavées pittoresques,
+              les pâtisseries au coin de la rue et les petits bistrots douillets
+              qui vous invitent à boire un verre de beaujolais. Préparez-vous à
+              vous approprier Paris.
+            </p>
+          </div>
+          <div class="col-2">
+            <div>
+              <h3>Paris : commencez à organiser !</h3>
+              <p>
+                Créez un voyage pour enregistrer et organiser toutes vos idées
+                et les visualiser sur une carte.
+              </p>
+              <button>Créez un voyage</button>
+            </div>
+            <div></div>
+          </div>
+        </div>
+        <section class="section-1">
+          <h2>Paris : les immanquables</h2>
+          <div>
+            <div class="col-1">
+              <h4>Se divertir</h4>
+              <p>
+                Des lieux à voir, des rues à explorer et des expériences
+                emblématiques à Paris.
+              </p>
+              <a href="#">Tout afficher</a>
+            </div>
+            <div class="col-2">
+              <div class="carrousel-col">
+                <div>
+                  <img alt="" src="./assets/img/eiffeltoren.jpg" />
+                  <div class="circle"><i class="icon-heart"></i></div>
+                  <div class="owl-2020">
+                    <i class="icon-travelers_choice_badge"></i><span>2022</span>
+                  </div>
+                </div>
+                <h5>Tour Eiffel</h5>
+                <div class="rating">
+                  <i class="icon-bubble_rating_full_refresh"></i>
+                  <i class="icon-bubble_rating_full_refresh"></i>
+                  <i class="icon-bubble_rating_full_refresh"></i>
+                  <i class="icon-bubble_rating_full_refresh"></i>
+                  <i class="icon-bubble_rating_half_refresh"></i>
+                  <span>139 901</span>
+                </div>
+                <p>
+                  Tours et plateformes d'observation, Monuments &amp; Points
+                  d'intérêt
+                </p>
+              </div>
+              <div class="carrousel-col">
+                <div>
+                  <img alt="" src="./assets/img/arc-de-triomphe-at-night.jpg" />
+                  <div class="circle"><i class="icon-heart"></i></div>
+                  <div class="owl-2020">
+                    <i class="icon-travelers_choice_badge"></i><span>2022</span>
+                  </div>
+                </div>
+                <h5>Arc de Triomphe</h5>
+                <div class="rating">
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_empty_refresh"></i>
+                  <span>56 987</span>
+                </div>
+                <p>Bâtiments architecturaux, Sites historiques</p>
+              </div>
+              <div class="carrousel-col">
+                <div>
+                  <img alt="" src="./assets/img/louvre.jpg" />
+                  <div class="circle"><i class="icon-heart"></i></div>
+                  <div class="owl-2020">
+                    <i class="icon-travelers_choice_badge"></i><span>2022</span>
+                  </div>
+                </div>
+                <h5>Musée du Louvre</h5>
+                <div class="rating">
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_half_refresh"></i>
+                  <span>100 845</span>
+                </div>
+                <p>Bâtiments architecturaux, Musées d'art</p>
+              </div>
+              <div class="carrousel-col">
+                <div>
+                  <img alt="" src="./assets/img/vue-de-la-cour-d-honneur.jpg" />
+                  <div class="circle"><i class="icon-heart"></i></div>
+                  <div class="owl-2020">
+                    <i class="icon-travelers_choice_badge"></i><span>2022</span>
+                  </div>
+                </div>
+                <h5>Musée Rodin</h5>
+                <div class="rating">
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_half_refresh"></i>
+                  <span>187 981</span>
+                </div>
+                <p>Musées spécialisés</p>
+              </div>
+              <div class="carrousel-col">
+                <div>
+                  <img alt="" src="./assets/img/the-amazingly-detailed.jpg" />
+                  <div class="circle"><i class="icon-heart"></i></div>
+                  <div class="owl-2020">
+                    <i class="icon-travelers_choice_badge"></i><span>2022</span>
+                  </div>
+                </div>
+                <h5>Cathédrale Notre-Dame de Paris</h5>
+                <div class="rating">
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i> <span>139 901</span>
+                </div>
+                <p>Bâtiments architecturaux, Sites historiques</p>
+              </div>
+              <div class="carrousel-col">
+                <div>
+                  <img alt="" src="./assets/img/the-bookstore.jpg" />
+                  <div class="circle"><i class="icon-heart"></i></div>
+                  <div class="owl-2020">
+                    <i class="icon-travelers_choice_badge"></i><span>2022</span>
+                  </div>
+                </div>
+                <h5>Librairie Shakespear and Company</h5>
+                <div class="rating">
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i> <span>140 321</span>
+                </div>
+                <p>Bibliothèques, Grands magasins</p>
+              </div>
+              <div class="carrousel-col">
+                <div>
+                  <img alt="" src="./assets/img/20180601-122841-largejpg.jpg" />
+                  <div class="circle"><i class="icon-heart"></i></div>
+                  <div class="owl-2020">
+                    <i class="icon-travelers_choice_badge"></i><span>2022</span>
+                  </div>
+                </div>
+                <h5>Musée d'Orsay</h5>
+                <div class="rating">
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i> <span>67 761</span>
+                </div>
+                <p>Musées d'art</p>
+              </div>
+              <div class="carrousel-col">
+                <div>
+                  <img alt="" src="./assets/img/marche-vernaison-maison.jpg" />
+                  <div class="circle"><i class="icon-heart"></i></div>
+                  <div class="owl-2020">
+                    <i class="icon-travelers_choice_badge"></i><span>2022</span>
+                  </div>
+                </div>
+                <h5>Marché aux Puces de Saint-Ouen</h5>
+                <div class="rating">
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_half_refresh"></i>
+                  <span>103 495</span>
+                </div>
+                <p>
+                  Antiquaires, Marchés aux puces &amp; Marchés de rue<br />Saint-Ouen,<br />France
+                  À 5,4 kilomètres de Paris
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="col-1">
+              <h4>Se restaurer</h4>
+              <p>Bistrots et bars typiques, et plus encore à Paris.</p>
+              <a href="#">Tout afficher</a>
+            </div>
+            <div class="col-2">
+              <div class="carrousel-col">
+                <div>
+                  <img alt="" src="./assets/img/meal6.jpg" />
+                  <div class="circle"><i class="icon-heart"></i></div>
+                  <div class="owl-2020">
+                    <i class="icon-travelers_choice_badge"></i><span>2022</span>
+                  </div>
+                </div>
+                <h5>Frenchie</h5>
+                <div class="rating">
+                  <i class="icon-bubble_rating_full_refresh"></i>
+                  <i class="icon-bubble_rating_full_refresh"></i>
+                  <i class="icon-bubble_rating_full_refresh"></i>
+                  <i class="icon-bubble_rating_full_refresh"></i>
+                  <i class="icon-bubble_rating_empty_refresh"></i>
+                  <span>1 297</span>
+                </div>
+                <p>
+                  €€€€ · Française, Végétariens bienvenus, Plats sans gluten
+                </p>
+              </div>
+              <div class="carrousel-col">
+                <div>
+                  <img alt="" src="./assets/img/meal5.jpg" />
+                  <div class="circle"><i class="icon-heart"></i></div>
+                  <div class="owl-2020">
+                    <i class="icon-travelers_choice_badge"></i><span>2022</span>
+                  </div>
+                </div>
+                <h5>114 Faubourg</h5>
+                <div class="rating">
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_half_refresh"></i>
+                  <i class="icon-bubble_rating_empty_refresh"></i>
+                  <span>1 754</span>
+                </div>
+                <p>€€ · Française, Européenne, Végétariens bienvenus</p>
+              </div>
+              <div class="carrousel-col">
+                <div>
+                  <img alt="" src="./assets/img/meal4.jpg" />
+                  <div class="circle"><i class="icon-heart"></i></div>
+                </div>
+                <h5>Verjus</h5>
+                <div class="rating">
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_empty_refresh"></i>
+                  <span>545</span>
+                </div>
+                <p>€€€ · Française, Européenne, Moderne</p>
+              </div>
+              <div class="carrousel-col">
+                <div>
+                  <img alt="" src="./assets/img/meal3.jpg" />
+                  <div class="circle"><i class="icon-heart"></i></div>
+                </div>
+                <h5>ASPIC</h5>
+                <div class="rating">
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_half_refresh"></i>
+                  <i class="icon-bubble_rating_empty_refresh"></i>
+                  <span>2 981</span>
+                </div>
+                <p>€€€€ · Française, Européenne, Saine</p>
+              </div>
+              <div class="carrousel-col">
+                <div>
+                  <img alt="" src="./assets/img/meal2.jpg" />
+                  <div class="circle"><i class="icon-heart"></i></div>
+                  <div class="owl-2020">
+                    <i class="icon-travelers_choice_badge"></i><span>2022</span>
+                  </div>
+                </div>
+                <h5>Bistrot chic</h5>
+                <div class="rating">
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_half_refresh"></i>
+                  <span>1 345</span>
+                </div>
+                <p>€€€ · Française, Européenne, Saine, Moderne</p>
+              </div>
+              <div class="carrousel-col">
+                <div>
+                  <img alt="" src="./assets/img/meal1.jpg" />
+                  <div class="circle"><i class="icon-heart"></i></div>
+                </div>
+                <h5>Vive les huîtres</h5>
+                <div class="rating">
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i>
+                  <i class="icon-bubble_rating_bg"></i> <span>4 340</span>
+                </div>
+                <p>€€€€ · Française, Moderne, Bar à vins</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-2">
+          <h2>Guides de voyageurs</h2>
+          <div class="carrousel">
+            <div class="col">
+              <img alt="" src="./assets/img/visit1.jpg" />
+              <h5>Best summer things to do in Paris | Eatwith</h5>
+              <p>36 articles</p>
+              <div>
+                <img alt="" src="./assets/img/forks-icon.jpg" />
+                <span>Par&nbsp;</span><span>Eatwith</span>
+              </div>
+            </div>
+            <div class="col">
+              <img alt="" src="./assets/img/visit2.jpg" />
+              <h5>Les 10 monuments et musées de Paris à faire</h5>
+              <p>10 articles</p>
+              <div>
+                <img alt="" src="./assets/img/topito-com.jpg" />
+                <span>Par&nbsp;</span><span>Topito</span>
+              </div>
+            </div>
+            <div class="col">
+              <img alt="" src="./assets/img/visit3.jpg" />
+              <h5>Top 10 des choses à faire ou à voir dans le 14ème</h5>
+              <p>10 articles</p>
+              <div>
+                <img alt="" src="./assets/img/topito-com.jpg" />
+                <span>Par&nbsp;</span><span>Topito</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <img
+        alt="TripAdvisor small logo"
+        src="./assets/img/favicon-tripadvisor.svg"
+        id="surprise"
+      />
+      <p>
+        Made at
+        <a href="https://www.lereacteur.io/" target="_blank">Le Reacteur</a> by
+        <a href="#" target="_blank">Marty McFly</a>
+      </p>
+    </footer>
+
+    <dialog id="contact" autofocus>
+      <span class="title">Formulaire de contact</span>
+      <form method="dialog" id="my_form">
+        <label for="firstname"
+          ><span>Prénom</span
+          ><input
+            type="text"
+            id="firstname"
+            name="firstname"
+            placeholder="Prénom"
+        /></label>
+        <label for="lastname"
+          ><span>Nom</span
+          ><input type="text" id="lastname" name="lastname" placeholder="Nom"
+        /></label>
+        <label for="email"
+          ><span>Email</span
+          ><input type="text" id="email" name="email" placeholder="Email"
+        /></label>
+        <label for="content"
+          ><span>Votre message ici</span
+          ><textarea
+            id="content"
+            name="content"
+            placeholder="Votre message ici"
+            height="70px"
+          ></textarea>
+        </label>
+        <button type="submit">Envoyer le message</button>
+      </form>
+    </dialog>
+  </body>
+</html>
